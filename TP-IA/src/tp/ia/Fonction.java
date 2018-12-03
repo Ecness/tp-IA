@@ -18,9 +18,17 @@ public class Fonction {
 	}
 	
 	
-	
-	
-	
-	
-	
+	public void rechercheAEtoile( List<Taquin> listTaquinPossible, Taquin taquinPrecedent) {
+		
+		int i,j;
+		for (Taquin taquin : listTaquinPossible) {
+			for(i=0;i<taquin.getTaille();i++) {
+				for(j=0;j<taquin.getTaille();j++) {
+					
+				}
+			}
+			
+			
+		}
+	}
 }

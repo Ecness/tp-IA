@@ -5,9 +5,11 @@ public class Taquin {
 	private int[][] cases;
 	private Taquin nextTaquin;
 	private int caseBougee;
+	private int taille;
 	
 
 	public Taquin(int taille) {
+		this.setTaille(taille);
 		cases = new int[taille][taille];
 		setNextTaquin(null);
 		setCaseBougee(0);
@@ -18,6 +20,9 @@ public class Taquin {
 		this.setCaseBougee(caseBougee);
 
 	}
+	
+	
+	
 	
 	
 	public int[][] getCases() {
@@ -42,5 +47,13 @@ public class Taquin {
 
 	public void setCaseBougee(int caseBougee) {
 		this.caseBougee = caseBougee;
+	}
+
+	public int getTaille() {
+		return taille;
+	}
+
+	public void setTaille(int taille) {
+		this.taille = taille;
 	}
 }
