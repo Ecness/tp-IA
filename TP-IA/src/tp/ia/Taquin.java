@@ -56,4 +56,19 @@ public class Taquin {
 	public void setTaille(int taille) {
 		this.taille = taille;
 	}
+	
+	@Override
+	public boolean equals(Object object) {
+		int[][] casesToCompare = ((Taquin)object).getCases();
+		
+		for (int i = 0; i < taille; i++) {
+			for (int j = 0; j < taille; j++) {
+				if (cases[i][j] != casesToCompare[i][j]) {
+					return false;
+				}
+			}
+		}
+		
+		return true;
+	}
 }
