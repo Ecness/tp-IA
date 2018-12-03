@@ -24,7 +24,12 @@ public class Fonction {
 		for (Taquin taquin : listTaquinPossible) {
 			for(i=0;i<taquin.getTaille();i++) {
 				for(j=0;j<taquin.getTaille();j++) {
-					
+					if(taquin.getCase(i,j)==0) {
+						if(i>0){
+							taquin.setCase(i, j, taquin.getCase(i-1, j));
+							taquin.setCase(i-1, j, 0);
+						}
+					}
 				}
 			}
 			

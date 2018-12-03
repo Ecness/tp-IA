@@ -29,6 +29,16 @@ public class Taquin {
 		return cases;
 	}
 
+	public int getCase(int i, int j) {
+		return cases[i][j];
+		
+	}
+	
+	public void setCase(int i, int j, int valeur) {
+		cases[i][j] = valeur;
+		
+	}
+	
 	public void setCases(int[][] cases) {
 		this.cases = cases;
 	}
